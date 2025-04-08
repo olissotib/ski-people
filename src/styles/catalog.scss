@@ -1,0 +1,38 @@
+.catalog {
+  overflow-x: hidden;
+  padding-bottom: 20px;
+
+  @media (min-width: 768px) {
+    padding-bottom: 32px;
+  }
+
+  @media (min-width: 1024px) {
+    padding-bottom: 40px;
+  }
+}
+
+.catalog__list {
+  display: flex;
+  gap: 4px;
+}
+
+.catalog__link {
+  display: block;
+  min-height: 38px;
+  color: #969EAE;
+  background-color: #EEEFF2;
+  padding: 11px 14px 13px;
+  border-radius: 32px;
+
+  &--active {
+    color: #FFFFFF;
+    background-color: #0044F0;
+  }
+
+  &:hover {
+    color: #0044F0;
+    background-color: #EEEFF2;
+    outline: 1px solid #0044F0;
+    outline-offset: -1px;
+  }
+}

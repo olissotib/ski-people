@@ -1,0 +1,93 @@
+.goods {
+}
+.goods__title {
+}
+.goods__list {
+}
+.goods__item {
+}
+.goods__card {
+}
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__link {
+  margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 19px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 16px;
+  }
+}
+.card__image {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.card__like-button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+}
+
+.card__info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  gap: 18px;
+  color: #1C1C1C;
+  
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: 1024px) {
+    margin-bottom: 18px;
+  }
+}
+
+.card__name {
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.card__price {
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
+}
+
+.button {
+  color: #0044F0;
+  padding: 12px 24px;
+  border-radius: 32px;
+  border: 1px solid #0044F0;
+
+  &:not(:disabled):hover {
+    color: #FFFFFF;
+    background-color: #0044F0;
+  }
+
+  &:focus-visible {
+    color: #0044F0;
+    border: 1px solid #042F9C;
+  }
+
+  &:disabled {
+    opacity: 20%;
+    pointer-events: none;
+  }
+}

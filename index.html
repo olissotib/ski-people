@@ -49,8 +49,8 @@
         </div>
       </div>
     </header>
-    <main>
-      <h1 class="main__title">Магазин товаров SKI People</h1>
+    <main class="main">
+      <h1 class="main__title visually-hidden">Магазин товаров SKI People</h1>
       <div class="catalog">
         <div class="container">
           <ul class="catalog__list">
@@ -187,30 +187,30 @@
           <form action="" class="cart__form" id="cartForm" method="POST">
             <h3 class="cart__form-title">Данные для доставки</h3>
             <fieldset class="cart__form-inputs">
-              <input class="cart__form-input" type="text" name="name" id="">
-              <input class="cart__form-input" type="tel" name="phone" id="">
-              <input class="cart__form-input" type="email" name="email" id="">
-              <input class="cart__form-input" type="text" name="address" id="">
+              <input class="cart__form-input" type="text" name="name">
+              <input class="cart__form-input" type="tel" name="phone">
+              <input class="cart__form-input" type="email" name="email">
+              <input class="cart__form-input" type="text" name="address">
               <textarea class="cart__form-input" name="comment" id="comment"></textarea>
             </fieldset>
             <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Доставка</legend>
-              <label for="" class="cart__form-label">
+              <label class="cart__form-label">
                 <input class="cart__form-radio" type="radio" value="delivery" name="delivery">
                 Доставка
               </label>
-              <label for="" class="cart__form-label">
+              <label class="cart__form-label">
                 <input class="cart__form-radio" type="radio" value="pickup" name="delivery">
                 Самовывоз
               </label>
             </fieldset>
             <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Оплата</legend>
-              <label for="" class="cart__form-label">
+              <label class="cart__form-label">
                 <input class="cart__form-radio" type="radio" value="card" name="payment">
                 Картой при получении
               </label>
-              <label for="" class="cart__form-label">
+              <label class="cart__form-label">
                 <input class="cart__form-radio" type="radio" value="cash" name="payment">
                 Наличными при получении
               </label>
@@ -252,7 +252,7 @@
                   <span class="order__option-text">Доставка</span>
                 </li>
               </ul>
-              <button class="order__button button" type="button" href="/">На главую</button>
+              <a class="order__button button" href="/">На главую</a>
             </div>
           </div>   
         </div>

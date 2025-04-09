@@ -1,13 +1,45 @@
+@use "./variables" as v;
+
 .goods {
+  padding-bottom: 40px;
+
+  @media (min-width: v.$tablet-second-width) {
+    padding-bottom: 60px;
+  } 
 }
+
 .goods__title {
+  font-size: 24px;
+  font-family: "Inter";
+  font-weight: 900;
+  margin-bottom: 24px;
+
+  @media (min-width: v.$tablet-width) {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: v.$tablet-second-width) {
+    margin-bottom: 40px;
+  } 
 }
+
 .goods__list {
+  display: grid;
+  gap: 32px 8px;
+  grid-template-columns: repeat(auto-fit, 140px);
+
+  @media (min-width: v.$tablet-width) {
+    gap: 32px 10px;
+    grid-template-columns: repeat(auto-fit, 230px);
+  }
+
+  @media (min-width: v.$tablet-second-width) {
+    gap: 40px 16px;
+    grid-template-columns: repeat(auto-fit, 302px);
+  }
 }
-.goods__item {
-}
-.goods__card {
-}
+
 .card {
   position: relative;
   display: flex;
@@ -17,11 +49,11 @@
 .card__link {
   margin-bottom: 12px;
 
-  @media (min-width: 768px) {
+  @media (min-width: v.$tablet-width) {
     margin-bottom: 19px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: v.$tablet-width) {
     margin-bottom: 16px;
   }
 }
@@ -51,7 +83,7 @@
     margin-bottom: 37px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: v.$tablet-width) {
     margin-bottom: 18px;
   }
 }

@@ -123,3 +123,10 @@
     pointer-events: none;
   }
 }
+
+.button-favorite path {
+  fill: #FFFFFF;
+  &:hover {
+    fill: #7c9be9;
+  }
+}

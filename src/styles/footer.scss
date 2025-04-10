@@ -53,12 +53,26 @@
   color: #FFFFFF;
   display: flex;
   margin-bottom: 16px;
+
+  &:hover {
+    svg {
+      opacity: 0.8;
+    }
+  }
 }
 
 .footer__social-list {
   display: flex;
   gap: 13px;
   align-items: center;
+}
+
+.footer__social-link {
+  &:hover {
+    svg {
+      opacity: 0.8;
+    }
+  }
 }
 
 .footer__authors-list {
@@ -68,8 +82,16 @@
   gap: 8px;
 }
 
+.footer__authors-item a {
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
 .footer__copyright {
   color: #F1E9E4;
+
+
 
   @media (min-width: 768px) {
     order: 2;

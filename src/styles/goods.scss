@@ -102,31 +102,3 @@
   }
 }
 
-.button {
-  color: #0044F0;
-  padding: 12px 24px;
-  border-radius: 32px;
-  border: 1px solid #0044F0;
-
-  &:not(:disabled):hover {
-    color: #FFFFFF;
-    background-color: #0044F0;
-  }
-
-  &:focus-visible {
-    color: #0044F0;
-    border: 1px solid #042F9C;
-  }
-
-  &:disabled {
-    opacity: 20%;
-    pointer-events: none;
-  }
-}
-
-.button-favorite path {
-  fill: #FFFFFF;
-  &:hover {
-    fill: #7c9be9;
-  }
-}

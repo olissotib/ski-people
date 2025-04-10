@@ -1,9 +1,11 @@
 @use "styles/default";
 @use "styles/variables";
+@use "styles/common";
 @use "styles/fonts";
 @use "styles/header";
 @use "styles/breadcrumbs";
 @use "styles/catalog";
 @use "styles/goods";
 @use "styles/product";
+@use "styles/order.scss";
 @use "styles/footer";

@@ -1,0 +1,37 @@
+.breadcrumbs__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+}
+
+.breadcrumbs__item {
+  position: relative;
+  color: #969EAE;
+}
+
+.breadcrumbs__item:not(:last-child) {
+  margin-right: 19px;
+
+}
+
+.breadcrumbs__item:last-child {
+  pointer-events: none;
+  cursor: default; 
+}
+
+
+.breadcrumbs__item:not(:last-child)::before {
+  content: ">";
+  position: absolute;
+  width: 8px;
+  height: 21px;
+  right: -15px;
+
+}
+
+.breadcrumbs__item:not(:last-child) .breadcrumbs__link:hover {
+  opacity: 0.6;
+}
